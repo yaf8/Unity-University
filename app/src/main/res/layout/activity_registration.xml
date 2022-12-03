@@ -37,9 +37,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/scrollview1">
 
-
-
-
         <LinearLayout
             android:id="@+id/LinearLayout2"
             android:layout_width="match_parent"
