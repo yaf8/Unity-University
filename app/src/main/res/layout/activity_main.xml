@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="horizontal"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/unitylogo"
+        android:layout_width="233dp"
+        android:layout_height="191dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:contentDescription="UnityUniversityLogo"
+        android:scaleType="center"
+        android:src="@mipmap/unitylogo"/>
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unitylogo"
+        android:layout_centerHorizontal="true"
+        android:fadingEdge="horizontal"
+        android:layout_marginTop="10dp"
+        android:focusable="auto"
+        android:fontFamily="sans-serif-black"
+        android:rotationX="20"
+        android:text="Welcome To Unity University"
+        android:textColor="#002BA8"
+        android:textSize="27sp"
+        android:textStyle="bold|italic" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textWelcome"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="223dp"
+            android:layout_height="61dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#362CBD"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegistration"
+            android:layout_width="223dp"
+            android:layout_height="62dp"
+            android:layout_below="@+id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#362CBD"
+            android:text="Registration"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMore"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="201dp"
+            android:layout_height="62dp"
+            android:layout_below="@+id/btnRegistration"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="More"
+            android:textColor="#0537EA"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
