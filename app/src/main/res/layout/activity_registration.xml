@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#FFEB3B"
+    android:background="@mipmap/yellow_background_unity"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -11,7 +11,7 @@
         android:layout_width="226dp"
         android:layout_height="186dp"
         android:layout_gravity="center"
-        android:background="#FFEB3B"
+        android:backgroundTint="#FDC92D"
         android:layout_marginTop="15dp"
         android:contentDescription="UnityUniversityLogo"
         android:scaleType="center"
@@ -286,14 +286,14 @@
                     android:id="@+id/btnRegistration"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#362CBD"
+                    android:backgroundTint="#1507D3"
                     android:text="regester" />
 
                 <Button
                     android:id="@+id/btnLogin"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#362CBD"
+                    android:backgroundTint="#1507D3"
                     android:layout_marginStart="30dp"
                     android:text="Login" />
 

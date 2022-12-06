@@ -3,16 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B"
+    android:background="@mipmap/yellow_background_unity"
     android:orientation="vertical">
 
     <ImageButton
         android:id="@+id/unitylogo"
-        android:layout_width="180dp"
-        android:layout_height="202dp"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="#FFEB3B"
+        android:backgroundTint="#FDC92D"
         android:contentDescription="UnityUniversityLogo"
         android:scaleType="center"
         android:src="@mipmap/unity_circle" />
@@ -23,12 +23,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/unitylogo"
         android:layout_centerHorizontal="true"
-        android:fadingEdge="horizontal"
         android:layout_marginTop="10dp"
+        android:fadingEdge="horizontal"
         android:focusable="auto"
         android:fontFamily="sans-serif-black"
         android:rotationX="20"
-        android:text="Login Activity"
+        android:text="Login"
         android:textColor="#002BA8"
         android:textSize="27sp"
         android:textStyle="bold|italic" />
@@ -125,7 +125,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:backgroundTint="#362CBD"
+                android:backgroundTint="#1507D3"
                 android:layout_marginStart="25dp"
                 android:text="Login"
                 android:textSize="15sp"
@@ -138,7 +138,7 @@
                 android:textSize="15sp"
                 android:layout_alignParentEnd="true"
                 android:textStyle="bold"
-                android:backgroundTint="#362CBD"
+                android:backgroundTint="#1507D3"
                 android:layout_marginEnd="25dp"
                 android:text="Registration"/>
 
