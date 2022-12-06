@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FFEB3B"
     android:layout_height="match_parent"
     android:fadingEdge="horizontal"
     tools:context=".MainActivity">
@@ -13,10 +14,10 @@
         android:layout_height="191dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:background="@color/white"
+        android:background="#FFEB3B"
         android:contentDescription="UnityUniversityLogo"
         android:scaleType="center"
-        android:src="@mipmap/unitylogo"/>
+        android:src="@mipmap/unity_circle"/>
 
     <TextView
         android:id="@+id/textWelcome"

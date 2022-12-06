@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FFEB3B"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -10,11 +11,11 @@
         android:layout_width="226dp"
         android:layout_height="186dp"
         android:layout_gravity="center"
+        android:background="#FFEB3B"
         android:layout_marginTop="15dp"
-        android:background="@color/white"
         android:contentDescription="UnityUniversityLogo"
         android:scaleType="center"
-        android:src="@mipmap/unitylogo" />
+        android:src="@mipmap/unity_circle" />
 
     <TextView
         android:id="@+id/textLogin"

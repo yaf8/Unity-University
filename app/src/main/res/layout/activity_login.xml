@@ -3,18 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFEB3B"
     android:orientation="vertical">
 
     <ImageButton
         android:id="@+id/unitylogo"
-        android:layout_width="wrap_content"
-        android:layout_height="201dp"
+        android:layout_width="180dp"
+        android:layout_height="202dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="@color/white"
+        android:background="#FFEB3B"
         android:contentDescription="UnityUniversityLogo"
         android:scaleType="center"
-        android:src="@mipmap/unitylogo" />
+        android:src="@mipmap/unity_circle" />
 
     <TextView
         android:id="@+id/textLogin"
@@ -27,7 +28,7 @@
         android:focusable="auto"
         android:fontFamily="sans-serif-black"
         android:rotationX="20"
-        android:text="Login To Unity University"
+        android:text="Login Activity"
         android:textColor="#002BA8"
         android:textSize="27sp"
         android:textStyle="bold|italic" />
