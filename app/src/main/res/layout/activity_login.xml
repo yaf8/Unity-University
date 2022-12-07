@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@mipmap/yellow_background_unity"
     android:orientation="vertical">
 
@@ -67,6 +67,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:textColorHint="#838282"
                 android:layout_marginBottom="15dp"
                 android:hint="Enter your username"
                 tools:ignore="TouchTargetSizeCheck" />
@@ -102,6 +103,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
                 android:hint="Enter your password"
+                android:textColorHint="#838282"
                 android:inputType="textPassword"
                 tools:ignore="TouchTargetSizeCheck" />
 

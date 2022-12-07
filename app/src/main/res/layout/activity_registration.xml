@@ -8,7 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@mipmap/yellow_background_unity"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <ImageButton
@@ -62,12 +62,12 @@
                     android:text="Fname"
                     android:textColor="@color/black"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    tools:ignore="ExtraText" />
+                    android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/EditText1"
+                    android:id="@+id/edtFname"
                     android:layout_width="200dp"
+                    android:textColorHint="#838282"
                     android:layout_height="wrap_content"
                     android:hint="Enter First Name" />
             </LinearLayout>
@@ -85,7 +85,7 @@
                     android:id="@+id/TextView3"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
+                    android:layout_marginStart="15.5dp"
                     android:gravity="center"
                     android:text="Mname"
                     android:textColor="@color/black"
@@ -93,8 +93,9 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/EditText2"
+                    android:id="@+id/edtMname"
                     android:layout_width="200dp"
+                    android:textColorHint="#838282"
                     android:layout_height="wrap_content"
                     android:hint="Enter Middle Name" />
 
@@ -120,8 +121,9 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/EditText3"
+                    android:id="@+id/edtLname"
                     android:layout_width="200dp"
+                    android:textColorHint="#838282"
                     android:layout_height="wrap_content"
                     android:hint="Enter Last Name" />
 
@@ -146,8 +148,10 @@
                     android:textStyle="bold" />
 
                 <Spinner
-                    android:id="@+id/Spinner1"
-                    android:layout_width="150dp"
+                    android:id="@+id/spinnerNationality"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="gravity"
+                    android:gravity="start"
                     android:layout_height="wrap_content" />
 
             </LinearLayout>
@@ -157,13 +161,15 @@
                 android:id="@+id/LinearLayout7"
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/TextView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="53dp"
+                    android:layout_marginStart="33dp"
                     android:layout_marginEnd="20dp"
                     android:text="Sex"
                     android:textColor="@color/black"
@@ -175,20 +181,25 @@
                     android:id="@+id/RadioGroup1"
                     android:layout_width="226dp"
                     android:layout_height="40dp"
+                    android:layout_gravity="center"
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/RadioButton1"
+                        android:id="@+id/radioMale"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical"
                         android:text="male" />
 
                     <RadioButton
-                        android:id="@+id/RadioButton2"
+                        android:id="@+id/radioFemale"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical"
                         android:text="female" />
 
                 </RadioGroup>
@@ -214,10 +225,12 @@
                     android:textSize="20sp" />
 
                 <EditText
-                    android:id="@+id/EditText4"
+                    android:id="@+id/edtAge"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:hint="Enter age"
+                    android:textColorHint="#838282"
+                    android:layout_marginStart="50dp"
                     android:inputType="number" />
             </LinearLayout>
 
@@ -242,8 +255,10 @@
                     android:textStyle="bold" />
 
                 <Spinner
-                    android:id="@+id/Spinner2"
-                    android:layout_width="150dp"
+                    android:id="@+id/spinnerDepartment"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="gravity"
+                    android:gravity="start"
                     android:layout_height="wrap_content" />
 
             </LinearLayout>
@@ -267,8 +282,9 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/EditText5"
+                    android:id="@+id/edtCampus"
                     android:layout_width="170dp"
+                    android:textColorHint="#838282"
                     android:layout_height="wrap_content"
                     android:hint="Enter your campus" />
 
