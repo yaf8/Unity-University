@@ -28,12 +28,12 @@ public class RegistrationActivity extends AppCompatActivity {
 
         radioGroup = findViewById(R.id.RadioGroup1);
 
-        spinner1 = findViewById(R.id.Spinner1);
+        spinner1 = findViewById(R.id.spinnerNationality);
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, nationality);
         adapter1.setDropDownViewResource(android.R.layout.simple_list_item_1);
         spinner1.setAdapter(adapter1);
 
-        spinner2 = findViewById(R.id.Spinner2);
+        spinner2 = findViewById(R.id.spinnerDepartment);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, department);
         adapter2.setDropDownViewResource(android.R.layout.simple_list_item_1);
         spinner2.setAdapter(adapter2);
