@@ -11,13 +11,13 @@
     <ImageButton
         android:id="@+id/unitylogo"
         android:layout_width="233dp"
-        android:layout_height="191dp"
+        android:layout_height="199dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:backgroundTint="#FDC92D"
         android:contentDescription="UnityUniversityLogo"
         android:scaleType="center"
-        android:src="@mipmap/unity_circle"/>
+        android:src="@mipmap/unity_circle" />
 
     <TextView
         android:id="@+id/textWelcome"

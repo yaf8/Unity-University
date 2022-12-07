@@ -8,8 +8,8 @@
 
     <ImageButton
         android:id="@+id/unitylogo"
-        android:layout_width="204dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="204dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:backgroundTint="#FDC92D"
@@ -63,12 +63,13 @@
                 tools:ignore="ExtraText" />
 
             <EditText
-                android:id="@+id/EditText1"
+                android:id="@+id/edtUserName"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColorHint="#838282"
                 android:layout_marginBottom="15dp"
+                android:textAlignment="center"
                 android:hint="Enter your username"
                 tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
@@ -90,20 +91,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:text="Password"
+                android:text="Password  "
                 android:textSize="23sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 tools:ignore="ExtraText" />
 
             <EditText
-                android:id="@+id/EditText2"
+                android:id="@+id/edtPassword"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
                 android:hint="Enter your password"
                 android:textColorHint="#838282"
+                android:textAlignment="center"
                 android:inputType="textPassword"
                 tools:ignore="TouchTargetSizeCheck" />
 
