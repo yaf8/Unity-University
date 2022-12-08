@@ -68,6 +68,7 @@
                     android:id="@+id/edtFname"
                     android:layout_width="200dp"
                     android:textColorHint="#838282"
+                    android:textColor="#00002B"
                     android:layout_height="wrap_content"
                     android:hint="Enter First Name" />
             </LinearLayout>
@@ -96,6 +97,7 @@
                     android:id="@+id/edtMname"
                     android:layout_width="200dp"
                     android:textColorHint="#838282"
+                    android:textColor="#00002B"
                     android:layout_height="wrap_content"
                     android:hint="Enter Middle Name" />
 
@@ -125,6 +127,7 @@
                     android:layout_width="200dp"
                     android:textColorHint="#838282"
                     android:layout_height="wrap_content"
+                    android:textColor="#00002B"
                     android:hint="Enter Last Name" />
 
             </LinearLayout>
@@ -152,6 +155,7 @@
                     android:layout_width="wrap_content"
                     android:textAlignment="gravity"
                     android:gravity="start"
+                    android:textColorHint="#838282"
                     android:layout_height="wrap_content" />
 
             </LinearLayout>
@@ -231,6 +235,7 @@
                     android:hint="Enter age"
                     android:textColorHint="#838282"
                     android:layout_marginStart="50dp"
+                    android:textColor="#00002B"
                     android:inputType="number" />
             </LinearLayout>
 
@@ -259,6 +264,7 @@
                     android:layout_width="wrap_content"
                     android:textAlignment="gravity"
                     android:gravity="start"
+                    android:textColorHint="#838282"
                     android:layout_height="wrap_content" />
 
             </LinearLayout>
@@ -287,6 +293,7 @@
                     android:textColorHint="#838282"
                     android:layout_marginStart="13dp"
                     android:layout_height="wrap_content"
+                    android:textColor="#00002B"
                     android:hint="Enter your campus" />
 
             </LinearLayout>
@@ -309,11 +316,12 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/edtUserName"
+                    android:id="@+id/edtUserName1"
                     android:layout_width="170dp"
                     android:textColorHint="#838282"
                     android:layout_marginStart="13dp"
                     android:layout_height="wrap_content"
+                    android:textColor="#00002B"
                     android:hint="Enter User Name" />
 
             </LinearLayout>
@@ -336,11 +344,12 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/edtPassword"
+                    android:id="@+id/edtPassword1"
                     android:layout_width="170dp"
                     android:textColorHint="#838282"
                     android:layout_marginStart="14dp"
                     android:layout_height="wrap_content"
+                    android:textColor="#00002B"
                     android:hint="Enter Password" />
 
             </LinearLayout>

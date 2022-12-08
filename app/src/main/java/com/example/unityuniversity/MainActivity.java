@@ -13,8 +13,12 @@ import com.google.android.material.shadow.ShadowRenderer;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnLogin, btnRegisteration, btnMore;
-    public static String SHE_NAME = "USERNAME";
-    public static String SHE_KEY = "PASSWORD";
+    public static String SHE_NAME = "ACCOUNT";
+    public static String SHE_KEY_USERNAME = "USERNAME";
+    public static String SHE_KEY_PASSWORD = "PASSWORD";
+
+    public static SharedPreferences sharedPreferences = null;
+    public static SharedPreferences.Editor editor = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
         btnRegisteration = findViewById(R.id.btnRegistration);
         btnMore = findViewById(R.id.btnMore);
 
-        SharedPreferences sharedPreferences = getSharedPreferences(SHE_NAME, MODE_PRIVATE);
+        sharedPreferences =  getSharedPreferences("ACC", MODE_PRIVATE);
+        editor =  sharedPreferences.edit();
+
+        SharedPreferences sharedPreferences = getSharedPreferences("ACC", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
 
