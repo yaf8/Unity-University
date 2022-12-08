@@ -29,29 +29,21 @@ public class MainActivity extends AppCompatActivity {
         btnRegisteration = findViewById(R.id.btnRegistration);
         btnMore = findViewById(R.id.btnMore);
 
-        sharedPreferences =  getSharedPreferences("ACC", MODE_PRIVATE);
-        editor =  sharedPreferences.edit();
-
-        SharedPreferences sharedPreferences = getSharedPreferences("ACC", MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-
-
-        final Intent[] intent = new Intent[3];
 
         btnLogin.setOnClickListener(v -> {
-            intent[0] = new Intent(this, LoginActivity.class);
-            startActivity(intent[0]);
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
         });
 
         btnRegisteration.setOnClickListener(v -> {
-            intent[1] = new Intent(this, RegistrationActivity.class);
-            startActivity(intent[1]);
+            Intent intent = new Intent(this, RegistrationActivity.class);
+            startActivity(intent);
         });
 
         btnMore.setOnClickListener(v -> {
-            intent[2] = new Intent(Intent.ACTION_VIEW);
-            intent[2].setData(Uri.parse("https://en.wikipedia.org/wiki/Unity_University"));
-            startActivity(intent[2]);
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("https://en.wikipedia.org/wiki/Unity_University"));
+            startActivity(intent);
         });
     }
 }

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.net.InetSocketAddress;
@@ -15,8 +16,8 @@ import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
 
-    ImageButton unitylogo;
-    Button btnLogin, btnRegistration;
+    private TextView unitylogo;
+    private Button btnLogin, btnRegistration;
     private EditText edtUserName, edtPassword;
 
     @Override
@@ -30,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         btnRegistration = findViewById(R.id.btnRegistration);
 
-        SharedPreferences sharedPreferences = getSharedPreferences("ACC", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences(MainActivity.SHE_NAME, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
 
@@ -42,10 +43,10 @@ public class LoginActivity extends AppCompatActivity {
             String UserName = edtUserName.getText().toString(), Password = edtPassword.getText().toString();
             if(!(UserName.isEmpty() && Password.isEmpty()))
             {
-                String Uname = MainActivity.sharedPreferences.getString("Uname", null);
-                String pass = MainActivity.sharedPreferences.getString("Pass", null);
+                String Uname = sharedPreferences.getString(MainActivity.SHE_KEY_USERNAME, null);
+                String pass = sharedPreferences.getString(MainActivity.SHE_KEY_PASSWORD, null);
 
-                if (!(Uname == UserName && pass == Password))
+                if (Objects.equals(Uname, UserName) && Objects.equals(pass, Password))
                 {
                     Toast.makeText(this, "Login Successfully", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(this, WelcomeActivity.class);

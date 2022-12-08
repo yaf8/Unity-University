@@ -13,14 +13,15 @@ import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegistrationActivity extends AppCompatActivity {
-    RadioGroup radioGroup;
+    private RadioGroup radioGroup;
 
-    Spinner spinner1, spinner2;
-    String[] nationality = {"Ethiopia", "USA", "UK", "Spain", "India", "Russia", "Canada"};
-    String[] department = {"Computer Science", "Management", "Engineering", "Medicine"};
+    private Spinner spinner1, spinner2;
+    private String[] nationality = {"Ethiopia", "USA", "UK", "Spain", "India", "Russia", "Canada"};
+    private String[] department = {"Computer Science", "Management", "Engineering", "Medicine"};
 
     private EditText edtFname, edtMname, edtLname, edtAge, edtCampus, edtUserName, edtPassword;
     private RadioButton radioMale, radioFemale;
@@ -28,7 +29,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
     Button btnLogin, btnRegistration;
 
-    ImageButton unitylogo;
+    TextView unitylogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +50,7 @@ public class RegistrationActivity extends AppCompatActivity {
         radioFemale = findViewById(R.id.radioFemale);
         radioGroup = findViewById(R.id.RadioGroup1);
 
-        SharedPreferences sharedPreferences = getSharedPreferences("ACC", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences(MainActivity.SHE_NAME, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         spinner1 = findViewById(R.id.spinnerNationality);
@@ -76,8 +77,9 @@ public class RegistrationActivity extends AppCompatActivity {
             String UserName = edtUserName.getText().toString(), Password = edtPassword.getText().toString();
             if(!UserName.isEmpty() && !Password.isEmpty())
             {
-                MainActivity.editor.putString("Uname", UserName);
-                MainActivity.editor.putString("Pass", Password);
+                editor.putString(MainActivity.SHE_KEY_USERNAME, UserName);
+                editor.putString(MainActivity.SHE_KEY_PASSWORD, Password);
+                editor.apply();
 
                 Toast.makeText(this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, LoginActivity.class);
